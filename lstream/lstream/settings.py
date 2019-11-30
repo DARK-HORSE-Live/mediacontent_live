@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'live_stream',
     'rest_framework',
-    'channels'
 ]
 
 MIDDLEWARE = [
@@ -72,12 +71,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'lstream.wsgi.application'
 
-CHANNEL_LAYERS = {
-    'default': {
-        'BACKEND': 'asgiref.inmemory.ChannelLayer',
-        'ROUTING': 'myproj.routing.channel_routing',
-    },
-}
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
